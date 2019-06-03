@@ -1,16 +1,15 @@
-Organisatie | Project | Persoon | Rol 
---- | --- | --- | ---
-VNG / Dimpact | ZGW 2.0 | Hugo ter Doest | Product Owner
-VNG | ZGW 2.0 | Eddy Timmer | Scrum Master
-VNG | ZGW 2.0 | Wishal Gokoel | Project manager / Contactpersoon
-VNG / Maykin Media | ZGW 2.0 | Sergei Maertens | Ontwikkelaar
-VNG / Maykin Media | ZGW 2.0 | Joeri Bekker | Ontwikkelaar
-VNG | ZGW 2.0 | Henri Korver | Architect/Product Owner API-testvoorziening
-VNG | ZGW 2.0 | Ivo Hendriks | Architect
-VNG | ZGW 2.0 | Remko de Haas | Informatie-Architect
-Gemeente Delft | ZGW 2.0 | Edwin Koster | Stakeholder
-Gemeente Haarlem | ZGW 2.0 | Bas de Boer | Stakeholder
-Gemeente Delft | ZGW 2.0 | Rita Berghuis | Stakeholder
-Gemeente Utrecht | ZGW 2.0 | Constantijn Masselink | Stakeholder
-Gemeente Amsterdam | ZGW 2.0 | Marcel Moerman | Stakeholder
-Gemeente Rotterdam | ZGW 2.0 | Ruub van der Klip | Stakeholder
+Organisatie | Persoon | Rol 
+--- | --- | ---
+VNG/Dimpact | Hugo ter Doest | Product Owner
+VNG | Eddy Timmer | Scrum Master
+VNG | Wishal Gokoel | Project manager / Contactpersoon
+VNG/Maykin Media | Sergei Maertens | Ontwikkelaar
+VNG/Maykin Media | Joeri Bekker | Ontwikkelaar
+VNG | Henri Korver | Architect/Product Owner API-testvoorziening
+VNG | Ivo Hendriks | Architect
+Gemeente Delft | Edwin Koster | Stakeholder en Informatie-Architect a.i.
+Gemeente Haarlem | Bas de Boer | Stakeholder
+Gemeente Delft | Rita Berghuis | Stakeholder
+Gemeente Utrecht | Constantijn Masselink | Stakeholder
+Gemeente Amsterdam | Marcel Moerman | Stakeholder
+Gemeente Rotterdam | Ruub van der Klip | Stakeholder
