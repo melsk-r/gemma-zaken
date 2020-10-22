@@ -30,12 +30,12 @@ het scrumteam zijn actief betrokken bij de realisatie van Common Ground.
 
 Daar waar GEMMA 2 nog niet (helemaal) in lijn is met Common Ground, wordt
 Common Ground gevolgd. De principes volgend uit de Common Ground visie worden
-toegepast. _Zie: [productvisie](/introductie/productvisie)_
+toegepast. _Zie: [productvisie](/productvisie)_
 
 
 #### Wat gaat er concreet gemaakt worden?
 
-_Volgens de [productvisie](/introductie/productvisie)_
+_Volgens de [productvisie](/productvisie)_
 
 * Opstellen en realiseren van een nieuwe ZGW API's volgens Open API
 Specificatie v3 (AOS 3)
@@ -47,9 +47,9 @@ zaaktypecataloguscomponent welke de ZGW API's strikt implementeren
 _Volgens oorspronkelijke projectdefinitie_
 
 * Een nieuwe versie van de ZDS services (gebaseerd op REST APIs, aansluitend
-  bij Common Ground) om de interoperabiliteit tussen leveranciers te 
+  bij Common Ground) om de interoperabiliteit tussen leveranciers te
   bewerkstelligen en leveranciers te bewegen in de richting van Common ground
-  (Silo's openen). _De nieuwe/opvolgende versie van ZDS is ondertussen hernoemt
+  (Silo's openen). _De nieuwe/opvolgende versie van ZDS is ondertussen hernoemd
   naar de ZGW API's_;
 * Een Referentie implementatie van een zaaksysteem in de app store;
 * Een multitenant toepassing van dit zaaksysteem/zakenregister en ZTC. (dit
@@ -93,4 +93,8 @@ De Opdrachtgever, [VNG Realisatie](https://github.com/VNG-Realisatie/)
 
 Dat is niet het doel en wordt niet aanbevolen. Echter, er worden  kleine Open
 Source componenten gerealiseerd waar leveranciers wellicht geen uitbreidingen
-op hoeven te doen om ze in de praktijk te gebruiken. 
+op hoeven te doen om ze in de praktijk te gebruiken.
+
+#### Wanneer wordt een Release Candidate vastgesteld als Release?
+
+Wanneer in de release candidate geen gebreken gevonden zijn en deze daarmee voldoende stabiel is wordt deze release candidate een release. De periode voor deze stabiliteit is vastgesteld op 2 maanden, ingaande vanaf de dag waarop de release candidate uitgebracht is. Onder gebreken wordt verstaan fouten in de standaard. Eventuele verbeteringen of verduidelijkingen in documentatie waarbij geen aanpassingen in de API's noodzakelijk zijn worden niet beschouwd als reden om een nieuwe release candidate uit te brengen.

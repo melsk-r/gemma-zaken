@@ -1,0 +1,124 @@
+---
+
+db_host: postgis-test
+redis_cache: redis-test
+
+services:
+  # Datastores
+
+  - name: postgis-test
+    templates: ../k8s/database/
+    pvc_name: db-test
+    sub_path: database-test
+    databases:
+      - zrc-test
+      - drc-test
+      - ztc-test
+      - brc-test
+      - nrc-test
+      - ac-test
+      - token-issuer-test
+      - klanten-test
+      - contactmomenten-test
+      - verzoeken-test
+
+  - name: redis-test
+    templates: ../k8s/cache/
+
+  # Official APIs
+
+  - name: ac-test
+    templates: ../k8s/ac/
+    image_tag: develop
+
+  - name: brc-test
+    templates: ../k8s/brc/
+    image_tag: develop
+
+  - name: drc-test
+    templates: ../k8s/drc/
+    image_tag: develop
+    min_upload_size: 4294967296  # 4GB
+
+  - name: nrc-test
+    templates: ../k8s/nrc/
+    image_tag: develop
+
+  - name: zrc-test
+    templates: ../k8s/zrc/
+    image_tag: develop
+
+  - name: ztc-test
+    templates: ../k8s/ztc/
+    image_tag: develop
+
+  - name: klanten-test
+    templates: ../k8s/klanten/
+    image_tag: 'latest'
+
+  - name: contactmomenten-test
+    templates: ../k8s/contactmomenten/
+    image_tag: 'latest'
+
+  - name: verzoeken-test
+    templates: ../k8s/verzoeken/
+    image_tag: 'latest'
+
+  # Unofficial APIs
+
+  # n/a
+
+  # Documentation
+
+  # n/a
+
+  # Supporting services
+
+  - name: docs-test
+    templates: ../k8s/docs
+
+  - name: token-issuer-test
+    templates: ../k8s/tokens
+    image_tag: latest
+    redis_host: redis-test
+    redis_db: 7
+    host: zaken-auth.test.vng.cloud
+
+
+ingress:
+  name: ref-implementatie-test
+  instance: test
+  services:
+    # Official APIs
+
+    - host: zaken-api.test.vng.cloud
+      name: zrc-test
+    - host: documenten-api.test.vng.cloud
+      name: drc-test
+    - host: catalogi-api.test.vng.cloud
+      name: ztc-test
+    - host: autorisaties-api.test.vng.cloud
+      name: ac-test
+    - host: besluiten-api.test.vng.cloud
+      name: brc-test
+    - host: notificaties-api.test.vng.cloud
+      name: nrc-test
+    - host: klanten-api.test.vng.cloud
+      name: klanten-test
+    - host: contactmomenten-api.test.vng.cloud
+      name: contactmomenten-test
+    - host: verzoeken-api.test.vng.cloud
+      name: verzoeken-test
+
+    # Unofficial APIs
+
+    # n/a
+
+    # Documentation
+
+    # n/a
+
+    # Supporting services
+
+    - host: zaken-auth.test.vng.cloud
+      name: token-issuer-test

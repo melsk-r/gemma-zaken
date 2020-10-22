@@ -22,11 +22,16 @@ markdown: kramdown
 
 exclude:
   - archief
+  - vendor
 
 plugins:
   - jekyll-redirect-from
   - jekyll-remote-theme
 
-remote_theme: maykinmedia/jekyll-theme-vng
+remote_theme: VNG-Realisatie/jekyll-theme-vng
 
 github: VNG-Realisatie/gemma-zaken
+
+theme: jekyll-theme-time-machine
+
+project_name: gemma-zaken
