@@ -3,6 +3,7 @@ on:
     branches:
       - master
       - documentatie-update
+  workflow_dispatch:
 
 jobs:
   deploy:
